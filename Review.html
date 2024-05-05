@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Review Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<header class="header">
+    <div class="logo">
+        <img src="ologo.png" alt="Logo">
+    </div>
+    <nav class="navbar">
+        <a href="index.html"class="active">Home</a>
+        <a href="About.html">About</a>
+        <a href="Skills.html">Skills</a>
+        <a href="Resume&Projects.html">Resume&Projects</a>
+        <a href="Review.html">Reviews</a>
+        <a href="contact.html" >Contact</a>
+    </nav>
+</header>
+<br><br><br><br><br><br>
+  <div class="container">
+    <h1>Leave a Review</h1>
+    <form id="reviewForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required><br>
+      <label for="review">Review:</label><br>
+      <textarea id="review" rows="4" required></textarea><br>
+      <button type="submit">Submit Review</button>
+    </form>
+    <div id="reviewCount">Total Reviews: <span id="count">0</span></div>
+    <div id="reviewContainer"></div> 
+  </div>
+  <script src="reviews.js"></script>
+</body>
+</html>
